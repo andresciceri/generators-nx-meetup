@@ -2,6 +2,9 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "products": "libs/products",
+    "sellers": "libs/sellers",
+    "shipping-order": "libs/shipping-order",
     "ultra-store": "apps/ultra-store",
     "ultra-store-e2e": "apps/ultra-store-e2e"
   }

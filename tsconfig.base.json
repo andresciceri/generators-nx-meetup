@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@generators-nx-meetup/products": ["libs/products/src/index.ts"],
+      "@generators-nx-meetup/sellers": ["libs/sellers/src/index.ts"],
+      "@generators-nx-meetup/shipping-order": [
+        "libs/shipping-order/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

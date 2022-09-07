@@ -1,0 +1,22 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/sellers/src",
+  "prefix": "generators-nx-meetup",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/sellers"],
+      "options": {
+        "jestConfig": "libs/sellers/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/sellers/**/*.ts", "libs/sellers/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}
