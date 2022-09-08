@@ -4,14 +4,51 @@
   "$id": "store-new-app",
   "type": "object",
   "properties": {
-    "name": {
+    "storeName": {
       "type": "string",
-      "description": "Library name",
-      "$default": {
-        "$source": "argv",
-        "index": 0
+      "description": "New Store Name",
+      "x-prompt": {
+        "message": "Whats is the new Store Name?",
+        "type": "string"
+      }
+    },
+    "apiUrlDev": {
+      "type": "string",
+      "description": "API URL Dev",
+      "x-prompt": {
+        "message": "Whats is the API URL to Dev environment?",
+        "type": "string"
+      }
+    },
+    "apiUrlStg": {
+      "type": "string",
+      "description": "API URL Staging",
+      "x-prompt": {
+        "message": "Whats is the API URL to Staging environment?",
+        "type": "string"
+      }
+    },
+    "apiUrlProd": {
+      "type": "string",
+      "description": "API URL Production",
+      "x-prompt": {
+        "message": "Whats is the API URL to Production environment?",
+        "type": "string"
+      }
+    },
+    "moduleList": {
+      "type": "array",
+      "description": "Add the App Modules",
+      "x-prompt": {
+        "message": "Select the App Modules Available",
+        "type": "list",
+        "items": [
+          { "value": "products", "label": "Productos" },
+          { "value": "sellers", "label": "Vendedores" },
+          { "value": "shippingOrders", "label": "Pedidos" }
+        ]
       }
     }
   },
-  "required": ["name"]
+  "required": ["storeName", "apiUrlDev", "apiUrlStg", "apiUrlProd"]
 }
