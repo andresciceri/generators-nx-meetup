@@ -1,6 +1,6 @@
 <p-toolbar>
   <div class="p-toolbar-group-left">
-    <h2>Hello Ultra Store</h2>
+    <h2>Hello <%= uppercase(appName) %></h2>
   </div>
 </p-toolbar>
 <div class="flex">
