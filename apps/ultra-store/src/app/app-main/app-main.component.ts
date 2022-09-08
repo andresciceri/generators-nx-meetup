@@ -14,9 +14,13 @@ export class AppMainComponent implements OnInit {
 
   ngOnInit(): void {
     this.items = [
-      { label: 'Productos', icon: 'pi pi-tags' },
-      { label: 'Pedidos', icon: 'pi pi-book' },
-      { label: 'Vendedores', icon: 'pi pi-users' },
+      { label: 'Productos', icon: 'pi pi-tags', routerLink: 'products/list' },
+      {
+        label: 'Pedidos',
+        icon: 'pi pi-book',
+        routerLink: 'shipping-orders/list',
+      },
+      { label: 'Vendedores', icon: 'pi pi-users', routerLink: 'sellers/list' },
     ];
   }
 }
