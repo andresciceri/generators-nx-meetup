@@ -1,0 +1,13 @@
+<p-toolbar>
+  <div class="p-toolbar-group-left">
+    <h2>Hello Ultra Store</h2>
+  </div>
+</p-toolbar>
+<div class="flex">
+  <p-panelMenu
+    [model]="items"
+    [style]="{ width: '300px' }"
+    [styleClass]="'flex-none'"
+  ></p-panelMenu>
+  <div class="flex-grow-1"><router-outlet></router-outlet></div>
+</div>
