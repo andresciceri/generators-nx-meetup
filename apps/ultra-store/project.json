@@ -17,14 +17,16 @@
           "apps/ultra-store/src/favicon.ico",
           "apps/ultra-store/src/assets"
         ],
-        "styles": ["apps/ultra-store/src/styles.scss"],
+        "styles": [
+          "apps/ultra-store/src/styles.scss",
+          "node_modules/primeng/resources/themes/saga-blue/theme.css",
+          "node_modules/primeng/resources/primeng.min.css"
+        ],
         "scripts": [
           "node_modules/prismjs/prism.js",
           "node_modules/prismjs/components/prism-typescript.js"
         ],
-        "allowedCommonJsDependencies": [          
-          "chart.js"
-        ]
+        "allowedCommonJsDependencies": ["chart.js"]
       },
       "configurations": {
         "production": {
