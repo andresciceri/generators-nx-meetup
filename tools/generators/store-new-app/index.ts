@@ -10,10 +10,7 @@ import {
   installPackagesTask,
 } from '@nrwl/devkit';
 import { GeneratorOptions } from './models';
-import {
-  E2eTestRunner,
-  UnitTestRunner,
-} from '@nrwl/angular/src/utils/test-runners';
+import { E2eTestRunner, UnitTestRunner } from '@nrwl/angular/generators';
 import { applicationGenerator } from '@nrwl/angular/generators';
 
 /**
